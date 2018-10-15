@@ -1,0 +1,132 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8"><style>
+                    h4 {
+                    display:inline;
+                    }
+                    div.meta {
+                    position: relative;
+                    width: 100%;
+                    height: 100px;
+                    border: 1px solid black; 
+                    } 
+                    
+                    div.supervisor {
+                    position: absolute;
+                    top: -18px;
+                    right: 0;
+                    width: 200px;
+                    height: 100px;
+                    }
+                    div.equipa {
+                    position: relative;
+                    width: 100%;
+                    height: 100px;
+                    } 
+                    
+                    div.foto {
+                    position: absolute;
+                    top: -18px;
+                    right: 800px;
+                    width: 200px;
+                    height: 100px;
+                    }
+                </style></head>
+   <body>
+      <center>
+         <h1>Manifesto</h1>
+      </center>
+      
+      <div class="meta">
+         
+         <h4>
+            Identificador:
+            
+         </h4>MIEI_2018_Web
+         <br><h4>
+            Titulo:
+            
+         </h4>WebSite - Arqueossítios do NW Português
+         <br><h4>
+            Data de início:
+            
+         </h4> 9 de outubro de 2018
+         <br><h4>
+            Data de finalização:
+            
+         </h4>15 de outubro de 2018
+         <br><div class="supervisor">
+            <h3>Supervisor:</h3>
+            <br><h4>Nome:</h4><a href="http://www.di.uminho.pt/~jcr">José Carlos Ramalho</a>
+            <br><h4>Email:</h4><a href="mailto:jcr@di.uminho.pt">jcr@di.uminho.pt</a>
+            
+         </div>
+         
+      </div>
+      <hr>
+      
+      <h2>Equipa de Trabalho:</h2>
+      <ul>
+         <div class="equipa">
+            <li>
+               
+               <h4>
+                  Identificador:
+                  
+               </h4> a79068
+               <br><h4>Nome:</h4><a href=""> Joel Soares Rodrigues</a>
+               <br><h4>Email:</h4><a href="mailto: a79068@alunos.uminho.pt"> a79068@alunos.uminho.pt</a>
+               
+               <div class="foto"><img src="foto.JPG" height="80" width="80"></div>
+               
+            </li>
+         </div>
+      </ul>
+      <hr>
+      
+      <h2>Resumo:</h2>
+      <div>
+         
+         <p>
+            O objetivo deste trabalho era elaborar um servidor capaz de estar a escuta numa porta
+            e que respondesse a pedidos <i>GET</i>. A funcionalidade do servidor é
+            mostrar ao cliente páginas <i>HTML</i> de informação de uma base de dados de arqueossítios do NW Português.
+            
+         </p>
+         
+         <p>
+            A primeira página que se apresenta no arranque do servidor é o índice de dois níveis,
+            um primeiro que é o concelho, correspondente ao campo <i>CONCEL</i> do ficheiro
+            de dados <i>XML</i>, e um segudo que é a identificação que corresponde ao campo <i>IDENTI</i>. 
+            
+         </p>  
+         
+         <p>
+            Para tal foi necessário utilizar o modulo <i>URL</i>, de forma a fazer um <i>parsing</i> do <i>url</i>, e o modulo <i>FS</i> para fazer leitura de ficheiros.
+            Numa primeira instância foi necessário alterar o ficheiro <i>XSL</i>, modificando as hiperligações, para quando o utilizador selecionar uma opção do índice
+            o <i>url</i> seja modificado e assim possibitar a leitura do ficheiro solicitado. Neste sentido,
+            decidiu-se implementar as hiperligações dos ficheiros indexados
+            da seguinte forma <i> href="http://localhost:4004/arqelem?id={generate-id()}" </i>. No momento de seleção de um elemento do índice é feito <i>parsing</i> ao  <i> pathname</i> 
+            do <i>url</i> e caso seja igual a "/arqelem" então é feita a pesquisa do identificador através
+            da primitiva <i>url.query</i> e apresentado o ficheiro correspondente.
+            
+            
+            
+            
+         </p>
+         
+         
+      </div>
+      <hr>
+      <br><h2>Resultados:</h2>
+      <div>
+         <ul>
+            <li><a href="https://github.com/JoelRodrigues58/DAW.git">Link github </a></li>
+            <li><a href="manifesto-tp4.html">Manifesto html </a></li>
+            <li><a href="manifesto-tp4.xml">Manifesto xml </a></li>
+         </ul>
+      </div>
+      
+   </body>
+</html>

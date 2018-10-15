@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE manifesto SYSTEM "file:/Users/JoelRodrigues/Documents/MIEI/4Ano/1Semestre/DA_Web/2-TPC/manifesto.dtd">
+
+<manifesto>
+    <meta>
+        <identificador>MIEI_2018_Web</identificador>
+        <titulo>WebSite - Arqueossítios do NW Português</titulo>
+        <dinicio> 9 de outubro de 2018</dinicio>
+        <dfim>15 de outubro de 2018</dfim>
+        <supervisor>
+            <nome url="http://www.di.uminho.pt/~jcr">José Carlos Ramalho</nome>
+            <email>jcr@di.uminho.pt</email>
+        </supervisor>
+    </meta>
+    <equipa>
+        <membro>
+            <identificador> a79068</identificador>
+            <nome> Joel Soares Rodrigues</nome>
+            <email> a79068@alunos.uminho.pt</email>
+            <foto src="foto.JPG"/>
+        </membro>
+    </equipa>
+    <resumo>
+        <para>
+            O objetivo deste trabalho era elaborar um servidor capaz de estar a escuta numa porta e que respondesse a pedidos <i>GET</i>. A funcionalidade do servidor é
+            mostrar ao cliente páginas <i>HTML</i> de informação de uma base de dados de arqueossítios do NW Português.
+        </para>
+        <para>
+            A primeira página que se apresenta no arranque do servidor é o índice de dois níveis, um primeiro que é o concelho, correspondente ao campo <i>CONCEL</i> do ficheiro
+            de dados <i>XML</i>, e um segudo que é a identificação que corresponde ao campo <i>IDENTI</i>. 
+           </para>  
+        <para>
+            Para tal foi necessário utilizar o modulo <i>URL</i>, de forma a fazer um <i>parsing</i> do <i>url</i>, e o modulo <i>FS</i> para fazer leitura de ficheiros.
+            Numa primeira instância foi necessário alterar o ficheiro <i>XSL</i>, modificando as hiperligações, para quando o utilizador selecionar uma opção do índice
+            o <i>url</i> seja modificado e assim possibitar a leitura do ficheiro solicitado. Neste sentido, decidiu-se implementar as hiperligações dos ficheiros indexados
+            da seguinte forma <i> href="http://localhost:4004/arqelem?id={generate-id()}" </i>. No momento de seleção de um elemento do índice é feito <i>parsing</i> ao  <i> pathname</i> 
+            do <i>url</i> e caso seja igual a "/arqelem" então é feita a pesquisa do identificador através da primitiva <i>url.query</i> e apresentado o ficheiro correspondente.
+            
+            
+            
+        </para>
+       
+    </resumo>
+    <resultados>
+        <resultado url="https://github.com/JoelRodrigues58/DAW.git">Link github </resultado>
+        <resultado url="manifesto-tp4.html">Manifesto html </resultado>
+        <resultado url="manifesto-tp4.xml">Manifesto xml </resultado>
+    </resultados>
+</manifesto>
