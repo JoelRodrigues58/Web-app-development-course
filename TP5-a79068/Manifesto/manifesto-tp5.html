@@ -1,0 +1,143 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8"><style>
+                    h4 {
+                    display:inline;
+                    }
+                    div.meta {
+                    position: relative;
+                    width: 100%;
+                    height: 100px;
+                    border: 1px solid black; 
+                    } 
+                    
+                    div.supervisor {
+                    position: absolute;
+                    top: -18px;
+                    right: 0;
+                    width: 200px;
+                    height: 100px;
+                    }
+                    div.equipa {
+                    position: relative;
+                    width: 100%;
+                    height: 100px;
+                    } 
+                    
+                    div.foto {
+                    position: absolute;
+                    top: -18px;
+                    right: 800px;
+                    width: 200px;
+                    height: 100px;
+                    }
+                </style></head>
+   <body>
+      <center>
+         <h1>Manifesto</h1>
+      </center>
+      
+      <div class="meta">
+         
+         <h4>
+            Identificador:
+            
+         </h4>MIEI_2018_Web
+         <br><h4>
+            Titulo:
+            
+         </h4>WebSite - Obras Músicais
+         <br><h4>
+            Data de início:
+            
+         </h4> 16 de outubro de 2018
+         <br><h4>
+            Data de finalização:
+            
+         </h4>22 de outubro de 2018
+         <br><div class="supervisor">
+            <h3>Supervisor:</h3>
+            <br><h4>Nome:</h4><a href="http://www.di.uminho.pt/~jcr">José Carlos Ramalho</a>
+            <br><h4>Email:</h4><a href="mailto:jcr@di.uminho.pt">jcr@di.uminho.pt</a>
+            
+         </div>
+         
+      </div>
+      <hr>
+      
+      <h2>Equipa de Trabalho:</h2>
+      <ul>
+         <div class="equipa">
+            <li>
+               
+               <h4>
+                  Identificador:
+                  
+               </h4> a79068
+               <br><h4>Nome:</h4><a href=""> Joel Soares Rodrigues</a>
+               <br><h4>Email:</h4><a href="mailto: a79068@alunos.uminho.pt"> a79068@alunos.uminho.pt</a>
+               
+               <div class="foto"><img src="foto.JPG" height="80" width="80"></div>
+               
+            </li>
+         </div>
+      </ul>
+      <hr>
+      
+      <h2>Resumo:</h2>
+      <div>
+         
+         <p>
+            O objetivo deste trabalho era elaborar um servidor capaz de estar a escuta numa porta
+            e que respondesse a pedidos <i>GET</i>. A funcionalidade do servidor é
+            mostrar ao cliente páginas <i>HTML</i> de informação de uma base de dados de Obras músicais de uma banda.
+            
+         </p>
+         
+         <p>
+            A base de dados é fornecida em ficheiros formato <i>json </i> onde cada um contem informação de uma música, nomeadamente os instrumentos. No entanto,
+            não 
+            existe um ficheiro que contenha todas as músicas indexadas. Portanto a primeira tarefa
+            a desenvolver foi um <i>script</i> na linguagem <i>gawk</i> em duas componentes:
+            
+            <ul>
+               
+               <li>1-Um primeiro programa que percorre todos os ficheiros JSON da diretoria e coleciona
+                  para um ficheiro os campos id,titulo e tipo de música. 
+               </li>
+               
+               <li>2-Um segundo programa que pega no resultado do anterior e origina um índice de dois
+                  níveis, onde o primeiro é o tipo de música e o segundo
+                  os títulos das músicas (selecionáveis).
+               </li>
+               
+            </ul>
+            
+            
+         </p>  
+         
+         <p>
+            Depois de produzido o ficheiro <i>index.html</i> seguiu-se a fase de implementação do servidor. Para responder ao cliente com as diferentes
+            páginas, foi
+            usado o modulo <b>url</b> para fazer uma <i>parsing</i> ao url e apresentar os ficheiros solicitados, ou seja, quando o utilizador seleciona
+            uma música 
+            é lido o ficheiro da música cujo título foi o selecionado. Foram desenvolvidos também
+            ficheiros <i>.pug</i> para tratar do <i>design</i> do servidor. 
+            
+         </p>
+         
+         
+      </div>
+      <hr>
+      <br><h2>Resultados:</h2>
+      <div>
+         <ul>
+            <li><a href="https://github.com/JoelRodrigues58/DAW.git">Link github </a></li>
+            <li><a href="manifesto-tp5.html">Manifesto html </a></li>
+            <li><a href="manifesto-tp5.xml">Manifesto xml </a></li>
+         </ul>
+      </div>
+      
+   </body>
+</html>

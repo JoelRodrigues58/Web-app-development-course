@@ -1,0 +1,34 @@
+extends layout
+
+block corpo
+    .w3-container
+        .w3-card-2
+            header.w3-container.w3-light-grey
+                h1= musicas.titulo
+            .w3-container
+                    if musicas.compositor
+                        h5= "Compositor: "+ musicas.compositor
+                    h5= "Tipo: "+ musicas.tipo
+            table(class="w3-table w3-bordered w3-striped w3-border test w3-hoverable")
+                if musicas.instrumentos
+                    center 
+                        h2 Instrumentos
+                    tr
+                    th Nome
+                    th Partitura
+                    each i in musicas.instrumentos
+                        tr
+                            td= i.nome
+                            td
+                                ul
+                                    li= "Path: "
+                                        a(href=i.partitura.path)=i.partitura.path
+                                    if i.partitura.voz 
+                                        li= "Voz: " + i.partitura.voz
+                                    if i.partitura.clave
+                                        li= "Clave: "+i.partitura.clave
+                                    if i.partitura.afinacao
+                                        li="Afinação: "+ i.partitura.afinacao
+                else 
+                    p= "Não existem instrumentos associados a esta música."
+            a(href= "http://localhost:5000/index")= "Voltar ao índice" 

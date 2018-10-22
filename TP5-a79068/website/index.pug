@@ -1,0 +1,22 @@
+extends layout
+
+block corpo
+    .w3-container
+        .w3-card-2
+            header.w3-container.w3-light-grey
+                h1 Obras Músicais
+            .w3-container
+                table(class="w3-table w3-bordered w3-striped w3-border test w3-hoverable")
+                    tr
+                        th Tipo de Música
+                        th Músicas
+                    each tipo in ind
+                        tr
+                            td= tipo.tipo
+                            td
+                                ul
+                                    each m in tipo.musicas
+                                        li
+                                            a(href="http://localhost:5000/musicas/"+m._id)=m.titulo
+            footer.w3-container.w3-light-grey
+                address Gerado por PubsApp

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE manifesto SYSTEM "file:/Users/JoelRodrigues/Documents/MIEI/4Ano/1Semestre/DA_Web/2-TPC/manifesto.dtd">
+
+<manifesto>
+    <meta>
+        <identificador>MIEI_2018_Web</identificador>
+        <titulo>WebSite - Obras Músicais</titulo>
+        <dinicio> 16 de outubro de 2018</dinicio>
+        <dfim>22 de outubro de 2018</dfim>
+        <supervisor>
+            <nome url="http://www.di.uminho.pt/~jcr">José Carlos Ramalho</nome>
+            <email>jcr@di.uminho.pt</email>
+        </supervisor>
+    </meta>
+    <equipa>
+        <membro>
+            <identificador> a79068</identificador>
+            <nome> Joel Soares Rodrigues</nome>
+            <email> a79068@alunos.uminho.pt</email>
+            <foto src="foto.JPG"/>
+        </membro>
+    </equipa>
+    <resumo>
+        <para>
+            O objetivo deste trabalho era elaborar um servidor capaz de estar a escuta numa porta e que respondesse a pedidos <i>GET</i>. A funcionalidade do servidor é
+            mostrar ao cliente páginas <i>HTML</i> de informação de uma base de dados de Obras músicais de uma banda.
+        </para>
+        <para>
+            A base de dados é fornecida em ficheiros formato <i>json </i> onde cada um contem informação de uma música, nomeadamente os instrumentos. No entanto, não 
+            existe um ficheiro que contenha todas as músicas indexadas. Portanto a primeira tarefa a desenvolver foi um <i>script</i> na linguagem <i>gawk</i> em duas componentes:
+                <ul>
+                    <li>1-Um primeiro programa que percorre todos os ficheiros JSON da diretoria e coleciona para um ficheiro os campos id,titulo e tipo de música. </li>
+                    <li>2-Um segundo programa que pega no resultado do anterior e origina um índice de dois níveis, onde o primeiro é o tipo de música e o segundo
+                    os títulos das músicas (selecionáveis).</li>
+                </ul>
+          
+           </para>  
+        <para>
+            Depois de produzido o ficheiro <i>index.html</i> seguiu-se a fase de implementação do servidor. Para responder ao cliente com as diferentes páginas, foi
+            usado o modulo <b>url</b> para fazer uma <i>parsing</i> ao url e apresentar os ficheiros solicitados, ou seja, quando o utilizador seleciona uma música 
+            é lido o ficheiro da música cujo título foi o selecionado. Foram desenvolvidos também ficheiros <i>.pug</i> para tratar do <i>design</i> do servidor. 
+        </para>
+       
+    </resumo>
+    <resultados>
+        <resultado url="https://github.com/JoelRodrigues58/DAW.git">Link github </resultado>
+        <resultado url="manifesto-tp5.html">Manifesto html </resultado>
+        <resultado url="manifesto-tp5.xml">Manifesto xml </resultado>
+    </resultados>
+</manifesto>
