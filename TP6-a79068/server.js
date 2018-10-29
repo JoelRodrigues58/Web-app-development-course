@@ -67,7 +67,7 @@ var myServer = http.createServer((req,res)=>{
                 if(!erro){
                     res.write(dados)
                 }
-                else res.write(pug.renderFile('erro.pug',{e: erro}))
+                else res.write(pug.renderFile('pug/erro.pug',{e: erro}))
                 res.end()
             })
         }
