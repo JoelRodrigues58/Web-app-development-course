@@ -1,0 +1,26 @@
+extends layout
+block content
+    div(style='margin-left:15%')
+        header.w3-container.w3-teal
+            h3 Registo de uma tarefa
+        w3.container
+            form.w3-container(action='/registoSucesso' method='POST')
+                br
+                label
+                    b Descrição
+                input.w3-input.w3-border.w3-light-grey(type='text' name='descricao')
+                br
+                label
+                    b Prazo
+                input.w3-input.w3-border.w3-light-grey(type='date' name='prazo')
+                br
+                select.w3-select(type='text' name='tipo')
+                    option(value="" disabled selected) Escolha o tipo de tarefa
+                    option(value="Doméstica") Doméstica
+                    option(value="Desportiva") Desportiva
+                    option(value="Profissional") Profissional
+                    option(value="Escolar") Escolar
+                    option(value="Família") Família
+                br
+                br
+                input.w3-btn.w3-blue-grey(type='submit' value='Enviar')

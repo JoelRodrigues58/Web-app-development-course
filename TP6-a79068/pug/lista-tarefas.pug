@@ -1,0 +1,26 @@
+extends layout
+block content
+     div(style='margin-left:15%')
+        header.w3-container.w3-teal
+            h3 Lista de tarefas
+        .w3.container
+            table.w3-table-all
+                tr
+                    th Registo
+                    th Prazo
+                    th Descrição
+                    th Tipo
+                each t in tarefas
+                    if t.apagado=="0"
+                        tr  
+                            td=t.data
+                            td=t.prazo
+                            td=t.descricao
+                            td=t.tipo
+                    else
+                        tr  
+                            td(bgcolor="#ff6666")=t.data
+                            td(bgcolor="#ff6666") Realizada
+                            td(bgcolor="#ff6666")=t.descricao
+                            td(bgcolor="#ff6666")=t.tipo
+

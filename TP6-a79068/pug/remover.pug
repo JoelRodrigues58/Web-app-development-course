@@ -1,0 +1,23 @@
+extends layout
+block content
+     div(style='margin-left:15%')
+        header.w3-container.w3-teal
+            h3 Lista de tarefas
+        .w3.container
+            table.w3-table-all
+                tr
+                    th Registo
+                    th Prazo
+                    th Descrição
+                    th Tipo
+                each t in tarefas
+                    if t.apagado=="0"
+                        tr  
+                            td=t.data
+                            td=t.prazo
+                            td=t.descricao
+                            td=t.tipo
+                            td
+                                form(action='/removerSucesso' method='POST')
+                                    button.w3-btn.w3-blue-grey(type='submit' value=t.id name='Remover') Remover
+

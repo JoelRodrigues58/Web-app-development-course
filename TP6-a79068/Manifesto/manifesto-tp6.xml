@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifesto>
+    <meta>
+        <identificador>MIEI_2018_Web-TPC6</identificador>
+        <titulo>Gestor de Tarefas</titulo>
+        <dinicio> 23 de outubro de 2018</dinicio>
+        <dfim>29 de outubro de 2018</dfim>
+        <supervisor>
+            <nome url="http://www.di.uminho.pt/~jcr">José Carlos Ramalho</nome>
+            <email>jcr@di.uminho.pt</email>
+        </supervisor>
+    </meta>
+    <equipa>
+        <membro>
+            <identificador> a79068</identificador>
+            <nome> Joel Soares Rodrigues</nome>
+            <email> a79068@alunos.uminho.pt</email>
+            <foto src="imagens/foto.JPG"/>
+        </membro>
+    </equipa>
+    <resumo>
+        <para>
+            O objetivo deste trabalho é a elaboração de um gestor de tarefas. Este gestor tem de ser capaz de efetuar as seguintes funções:
+            <ul>
+                <li>Realizar o <b>registo de novas tarefas</b>. Este registo apresenta como parâmetros a descrição da tarefa, o prazo e o tipo 
+                    de tarefa (Doméstica, Escolar, Profissional, Desportiva e Famíliar). </li>
+                <li>Realizar a <b>remoção de tarefas</b>. </li>
+                <li>Apresentar a <b>lista de tarefas</b> ao utilizador.</li>
+            </ul>
+        </para>
+        
+        <para>
+            Para implementar este gestor decidiu-se que o sistema disponibiliza ao utilizador 4 páginas distintas, página principal, página de registo, página 
+            de remoção de tarefa e ainda página de apresentação da lista de tarefas. 
+        </para>         
+        <para>
+            De forma a implementar todas as funcionalidades no sistema foi elaborado um servidor em <i>NodeJS</i>. Este servidor apresenta duas condições iniciais que 
+            testam o método <i>HTML</i>, caso seja <i>GET</i>, testa-se o <i>pathname</i> do <i>url</i> e apresentam-se as várias páginas ao utilizador. Por outro lado,
+            caso seja <i>POST</i>, são implementados as funcionalidades de remoção de uma tarefa e registo de uma tarefa.  
+        </para>
+        <para>
+            Realçam-se alguns pormenores usados, por exemplo, no momento de inserção de uma tarefa, é calculada a data atual no servidor e adicionada ao ficheiro de dados, é adicionado também um identificador
+            à tarefa e ainda uma flag que correponde ao estado(apagada, não apagada). Quando é removida uma tarefa é alterado o estado da mesma e passa a ser
+            apresentada de forma diferente na lista de tarefas.
+        </para>
+        <para>
+            A seguir apresentam-se as várias páginas criadas durante o desenvolvimento do sistema.
+            <table>
+                <tr>
+                    <th>
+                        Home
+                    </th>
+                    <th>
+                        Registo
+                    </th>
+                    <th>
+                        Lista
+                    </th>
+                    <th>
+                        Remover
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <imagem src="imagens/home.png"/>
+                    </td>
+                    <td>
+                        <imagem src="imagens/registo.png"/>
+                    </td>
+                    <td>
+                        <imagem src="imagens/lista.png"/>
+                    </td>
+                    <td>
+                        <imagem src="imagens/remover.png"/>
+                    </td>
+                </tr>
+            </table>
+        </para>
+       
+    </resumo>
+    <resultados>
+        <resultado url="https://github.com/JoelRodrigues58/DAW.git">Link github </resultado>
+        <resultado url="manifesto-tp6.html">Manifesto html </resultado>
+        <resultado url="manifesto-tp6.xml">Manifesto xml </resultado>
+    </resultados>
+</manifesto>
