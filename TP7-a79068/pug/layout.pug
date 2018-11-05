@@ -1,0 +1,19 @@
+doctype html
+html
+    head
+        title Desenvolvimento de Aplicações Web (aula7)
+        meta(charset='UTF-8')
+        link(rel='stylesheet',href='/w3.css')
+        link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway')
+        style
+            include ../stylesheets/home.css
+    body
+        div(class="bgimg w3-display-container w3-animate-opacity w3-text-white")
+            div(class="w3-display-topleft w3-padding-large w3-xlarge") 
+                div(class="w3-bar w3-wide")
+                    a(href="/" class="w3-bar-item w3-button")
+                        b Home
+                    a(href="/formulario" class="w3-bar-item w3-button")
+                        b Submeter
+            block content
+        

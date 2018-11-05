@@ -1,0 +1,30 @@
+extends layout
+block content
+    div(class="formulario")
+        form.w3-container(action='/formulario' method='POST' enctype='multipart/form-data')
+            label
+                b Selecione um ficheiro
+            input.w3-input.w3-border.w3-light-grey(type='file' name='ficheiro')
+            br
+            label
+                b Descrição
+            input.w3-input.w3-border.w3-light-grey(type='text' name='desc')
+            br
+            center
+                input.w3-btn.w3-white(type='submit' value='Enviar')
+    if ficheiros.length
+        div(class="recebidos")
+            hr.w3-border-grey
+            center
+                h2(class="h12") Ficheiros Recebidos
+            table.w3-table-all.w3-hoverable
+                tr
+                    th Ficheiro
+                    th Descrição
+                    th Data submissão
+                each f in ficheiros
+                    tr
+                        td
+                            a(href='/'+f.name)=f.name
+                        td= f.desc
+                        td= f.date
