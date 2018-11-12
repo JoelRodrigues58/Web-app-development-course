@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifesto>
+    <meta>
+        <identificador>MIEI_2018_Web-TPC8</identificador>
+        <titulo>Gestor de Ficheiros - Jquery e Ajax</titulo>
+        <dinicio> 6 de outubro de 2018</dinicio>
+        <dfim>13 de novembro de 2018</dfim>
+        <supervisor>
+            <nome url="http://www.di.uminho.pt/~jcr">José Carlos Ramalho</nome>
+            <email>jcr@di.uminho.pt</email>
+        </supervisor>
+    </meta>
+    <equipa>
+        <membro>
+            <identificador> a79068</identificador>
+            <nome url="facebook.com"> Joel Soares Rodrigues</nome>
+            <email> a79068@alunos.uminho.pt</email>
+            <foto src="imagens/foto.JPG"/>
+        </membro>
+    </equipa>
+    <resumo>
+        <para>
+            Este trabalho tem como objetivo a elaboração de um gestor de ficheiros. Este gestor tem de ser capaz de efetuar submissões de ficheiros, armazená-los e ainda
+            visualizar os ficheiros já guardados. Ao contrário do trabalho prático anterior, agora terá de existir programação no lado do cliente para atualizar a tabela de ficheiros
+            já armazenados automaticamente após o preenchimento do formulário sem a necessidade de efetuar pedidos <i>POST</i> ao servidor.
+        </para>
+    
+        
+        <para>
+            De forma a implementar todas as funcionalidades no sistema foi elaborado um servidor em <i>NodeJS</i>, utilizando o módulo <i>express</i> que, quando
+            o método é <i>GET</i> apresenta ao utilizador as várias páginas, nomeadamente a página inicial e a página de registo (simultaneamente a que apresenta 
+            a lista de ficheiros registados). 
+        </para> 
+        
+        <para>
+            Para resolver a problemática da atualização automática da tabela, foi desenvolvido um programa usando Jquery e Ajax
+        </para>
+        
+        
+        <para>
+            A seguir apresentam-se as várias páginas criadas durante o desenvolvimento do sistema.
+            <table>
+                <tr>
+                    <th>
+                        Home
+                    </th>
+                    <th>
+                        Registo/Lista de ficheiros
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <imagem src="imagens/home.png"/>
+                    </td>
+                    <td>
+                        <imagem src="imagens/registo.png"/>
+                    </td>
+                </tr>
+            </table>
+        </para>
+       
+    </resumo>
+    <resultados>
+        <resultado url="https://github.com/JoelRodrigues58/DAW.git">Link github </resultado>
+        <resultado url="manifesto-tp8.html">Manifesto html </resultado>
+        <resultado url="manifesto-tp8.xml">Manifesto xml </resultado>
+    </resultados>
+</manifesto>

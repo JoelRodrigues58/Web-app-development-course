@@ -1,0 +1,25 @@
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background-image: url('home.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.formulario {
+    position: absolute;
+    width: 50%;
+    top: 20%;
+    left: 25%; 
+}
+
+.recebidos {
+    position: absolute;
+    width: 100%;
+    top: 60%;
+    color: black;
+}
+
+.h12 {
+    color: white;
+}

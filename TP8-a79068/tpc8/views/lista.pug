@@ -1,0 +1,10 @@
+tr
+    th Ficheiro
+    th Descrição
+    th Data submissão
+each f in ficheiros
+    tr
+        td
+            a(href='/'+f.name target="_blank")=f.name
+        td= f.desc
+        td= f.date
