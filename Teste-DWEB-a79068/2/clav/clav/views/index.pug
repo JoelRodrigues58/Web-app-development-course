@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  header.w3-container.w3-grey
+    center
+      h1 Classificação e Avaliação da Informação Pública
+  w3.container
+    h2 O que é a CLAV
+    p É uma Plataforma que visa: 
+      ul 
+        li Disponibilizar a “Lista Consolidada para a classificação e avaliação da informação pública” enquanto instrumento facilitador da elaboração dos planos de classificação e tabelas de seleção da Administração Pública, de empresas públicas e de outras entidades;
+        li  Possibilitar a submissão de propostas ou atualizações de planos de classificação e tabelas de seleção;
+        li  Desmaterializar os procedimentos de controlo da eliminação da informação arquivística através da recolha e análise de autos de eliminação;
+        li  Disponibilizar ferramentas para a elaboração e submissão de planos de preservação digital e planos de substituição de suporte.
+  w3.container
+    dl
+      each n in nivel1
+        dt 
+          b Código
+          dd
+            a(href="http://localhost:3000/codigo/"+ n.codigo) #{n.codigo}
+        dt 
+          b Título
+        dd=n.titulo
+        dt
+          b ID
+        dd=n.id
+        hr
+        br

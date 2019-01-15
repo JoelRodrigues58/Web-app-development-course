@@ -1,0 +1,32 @@
+1- Primeiro obtive todos do nivel 3 http://clav-test.di.uminho.pt/api/classes/nivel/3
+     depois inseri numa base de dados e vi quantos tinham descendencia 200 e contei: 
+        db.teste.find({codigo:{ $regex: /200./}}).count()
+{ "_id" : ObjectId("5c3dcaf4f64e7a5132d71050"), "codigo" : "200.10.100", "titulo" : "Reivindicação do cumprimento de instrumentos ratificados por Portugal", "id" : "http://jcr.di.uminho.pt/m51-clav#c200.10.100" }
+{ "_id" : ObjectId("5c3dcaf4f64e7a5132d71051"), "codigo" : "200.10.001", "titulo" : "Definição e acompanhamento de posições nacionais no âmbito das relações bilaterais e multilaterais entre países", "id" : "http://jcr.di.uminho.pt/m51-clav#c200.10.001" }
+{ "_id" : ObjectId("5c3dcaf4f64e7a5132d71052"), "codigo" : "200.10.300", "titulo" : "Ações de controlo da aplicação do Direito da União Europeia", "id" : "http://jcr.di.uminho.pt/m51-clav#c200.10.300" }
+{ "_id" : ObjectId("5c3dcaf4f64e7a5132d71053"), "codigo" : "200.10.200", "titulo" : "Preparação e negociação de atos legislativos vinculativos da União Europeia", "id" : "http://jcr.di.uminho.pt/m51-clav#c200.10.200" }
+{ "_id" : ObjectId("5c3dcaf4f64e7a5132d71054"), "codigo" : "200.10.400", "titulo" : "Definição conjunta das opções estratégicas da União Europeia", "id" : "http://jcr.di.uminho.pt/m51-clav#c200.10.400" }
+{ "_id" : ObjectId("5c3dcaf4f64e7a5132d71055"), "codigo" : "200.10.501", "titulo" : "Definição e coordenação das políticas setoriais pelos Estados Membros da União Europeia", "id" : "http://jcr.di.uminho.pt/m51-clav#c200.10.501" }
+{ "_id" : ObjectId("5c3dcaf4f64e7a5132d71056"), "codigo" : "200.10.600", "titulo" : "Preparação e implementação de políticas e atos da União Europeia", "id" : "http://jcr.di.uminho.pt/m51-clav#c200.10.600" }
+{ "_id" : ObjectId("5c3dcaf4f64e7a5132d71057"), "codigo" : "200.10.700", "titulo" : "Preparação e negociação do Quadro Plurianual e dos instrumentos financeiros da União Europeia", "id" : "http://jcr.di.uminho.pt/m51-clav#c200.10.700" }
+{ "_id" : ObjectId("5c3dcaf4f64e7a5132d71058"), "codigo" : "200.10.800", "titulo" : "Celebração de acordos e outros atos internacionais", "id" : "http://jcr.di.uminho.pt/m51-clav#c200.10.800" }
+{ "_id" : ObjectId("5c3dcaf4f64e7a5132d71059"), "codigo" : "200.20.001", "titulo" : "Acompanhamento da situação internacional", "id" : "http://jcr.di.uminho.pt/m51-clav#c200.20.001" }
+{ "_id" : ObjectId("5c3dcaf4f64e7a5132d7105a"), "codigo" : "200.10.002", "titulo" : "Representação e participação em organizações internacionais", "id" : "http://jcr.di.uminho.pt/m51-clav#c200.10.002" }
+{ "_id" : ObjectId("5c3dcaf4f64e7a5132d7105b"), "codigo" : "200.10.201", "titulo" : "Preparação e negociação de atos legislativos não vinculativos da União Europeia", "id" : "http://jcr.di.uminho.pt/m51-clav#c200.10.201" }
+{ "_id" : ObjectId("5c3dcaf4f64e7a5132d7105c"), "codigo" : "200.20.002", "titulo" : "Organização de missões internacionais", "id" : "http://jcr.di.uminho.pt/m51-clav#c200.20.002" }
+{ "_id" : ObjectId("5c3dcaf4f64e7a5132d7105d"), "codigo" : "200.20.502", "titulo" : "Acreditação de agentes diplomáticos", "id" : "http://jcr.di.uminho.pt/m51-clav#c200.20.502" }
+{ "_id" : ObjectId("5c3dcaf4f64e7a5132d7105e"), "codigo" : "200.30.300", "titulo" : "Aprovação de projetos da sociedade civil", "id" : "http://jcr.di.uminho.pt/m51-clav#c200.30.300" }
+{ "_id" : ObjectId("5c3dcaf4f64e7a5132d7105f"), "codigo" : "200.30.301", "titulo" : "Conceção de programas de cooperação e de ajuda pública ao desenvolvimento", "id" : "http://jcr.di.uminho.pt/m51-clav#c200.30.301" }
+{ "_id" : ObjectId("5c3dcaf4f64e7a5132d71060"), "codigo" : "200.30.302", "titulo" : "Execução de projetos de cooperação e de ajuda pública ao desenvolvimento", "id" : "http://jcr.di.uminho.pt/m51-clav#c200.30.302" }
+{ "_id" : ObjectId("5c3dcaf4f64e7a5132d71061"), "codigo" : "200.20.500", "titulo" : "Organização de visitas de Estado ou equiparadas", "id" : "http://jcr.di.uminho.pt/m51-clav#c200.20.500" }
+{ "_id" : ObjectId("5c3dcaf4f64e7a5132d71062"), "codigo" : "200.30.303", "titulo" : "Acompanhamento e avaliação da execução de projetos de cooperação e de ajuda pública ao desenvolvimento", "id" : "http://jcr.di.uminho.pt/m51-clav#c200.30.303" }
+{ "_id" : ObjectId("5c3dcaf4f64e7a5132d71063"), "codigo" : "200.30.001", "titulo" : "Coordenação e execução de ações de ajuda humanitária e de emergência", "id" : "http://jcr.di.uminho.pt/m51-clav#c200.30.001" }
+
+R: 22
+
+2-
+Primeiro obtive todos os de nivel http://clav-test.di.uminho.pt/api/classes/nivel/4, inseri numa base de dados
+    e db.teste2.find().count()
+R: 116
+
+3-

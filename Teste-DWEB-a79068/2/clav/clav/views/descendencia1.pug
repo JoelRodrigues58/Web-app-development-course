@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  w3.container
+    dl
+      each n in nivel2
+        dt 
+          b Código
+          dd
+            a(href="http://localhost:3000/codigo2/"+ n.codigo) #{n.codigo}
+        dt 
+          b Título
+        dd=n.titulo
+        dt
+          b ID
+        dd=n.id
+        hr
+        br
+    a(href="http://localhost:3000/") Sair
