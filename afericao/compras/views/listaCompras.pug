@@ -1,0 +1,17 @@
+extends layout
+block content
+  .w3-container
+    table.w3-table-all
+        tr
+            th Produto
+            th Quantidade
+            th Data 
+            th Quem
+            th Estado
+        each c in compras
+            tr
+                td= c.produto
+                td= c.quantidade
+                td= c.date
+                td= c.quem
+                td= c.estado
