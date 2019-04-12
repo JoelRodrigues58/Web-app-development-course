@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE manifesto SYSTEM "file:/Users/JoelRodrigues/Documents/MIEI/4Ano/1Semestre/DA_Web/2-TPC/manifesto.dtd">
+
+<manifesto>
+    <meta>
+        <identificador>MIEI_2018_Web</identificador>
+        <titulo>DTDs,XML,HTML</titulo>
+        <dinicio> 26 de setembro de 2018</dinicio>
+        <dfim>30 de setembro de 2018</dfim>
+        <supervisor>
+            <nome url="http://www.di.uminho.pt/~jcr">José Carlos Ramalho</nome>
+            <email>jcr@di.uminho.pt</email>
+        </supervisor>
+    </meta>
+    <equipa>
+        <membro>
+            <identificador>a79068</identificador>
+            <nome>Joel Soares Rodrigues</nome>
+            <email>a79068@alunos.uminho.pt</email>
+            <foto src="foto.JPG"/>
+        </membro>
+    </equipa>
+    <resumo>
+        <para>
+            Em primeiro lugar, neste trabalho foi desenvolvido um <i>Document Type Defenition</i> com o objetivo de estruturar um ficheiro <b>XML</b> que contém a 
+            informação relativa ao presente documento. Este ficheiro <b>XML</b> terá obrigatoriamente de obdecer a todas as regras estabelecidas para poder ser validado.
+           
+        </para>
+        <para>
+            Seguidamente, sendo que o objetivo era elaborar um ficheiro <b>HTML</b> que representa a página atual, foi necessária a concretização de um ficheiro <b>XSLT</b>
+            que tem como objetivo a transformação do <b>XML</b> em <b>HTML</b>.
+        </para>  
+        <para>
+            Finalmente, de modo a ir de encontro a um outro objetivo paralelo, foi desenvolvido novamente um <i>Document Type Defenition</i> mas agora para estruturar e validar 
+            ficheiros da plataforma <i>clav.dglab.gov.pt</i>.
+        </para>
+       
+    </resumo>
+    <resultados>
+        <resultado url="manifesto.dtd">Manifesto dtd </resultado>
+        <resultado url="manifesto.xml">Manifesto xml </resultado>
+        <resultado url="manifesto.xsl">Manifesto xsl</resultado>
+        <resultado url="manifesto.html">Manifesto html</resultado>
+        <resultado url="pn.dtd">Pn dtd</resultado>
+    </resultados>
+</manifesto>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT manifesto (meta,equipa,resumo,resultados) >
+
+<!ELEMENT meta (identificador,titulo,subtitulo?,dinicio?,dfim,supervisor) >
+<!ELEMENT identificador (#PCDATA) >
+<!ELEMENT titulo (#PCDATA) >
+<!ELEMENT dfim (#PCDATA) >
+<!ELEMENT dinicio (#PCDATA) >
+<!ELEMENT subtitulo (#PCDATA) >
+
+
+<!ELEMENT supervisor (nome,email) >
+<!ELEMENT nome (#PCDATA) >
+<!ATTLIST nome 
+            url CDATA #IMPLIED>
+<!ELEMENT email (#PCDATA) >
+<!ELEMENT website (#PCDATA) >
+
+
+
+<!ELEMENT equipa (membro)+ >
+<!ELEMENT membro (identificador,nome,email,foto?) >
+<!ELEMENT foto EMPTY >
+<!ATTLIST foto 
+        src CDATA #REQUIRED >
+
+
+<!ELEMENT resumo (para)+ >
+<!ELEMENT para (#PCDATA | b | i | ul | code | table)* >
+<!ELEMENT b (#PCDATA)>
+<!ELEMENT i (#PCDATA)>
+<!ELEMENT code (#PCDATA)>
+<!ELEMENT table (tr)+ >
+<!ELEMENT tr (td | th)* >
+<!ELEMENT td (#PCDATA | imagem)* >
+<!ELEMENT th (#PCDATA | imagem)* >
+<!ELEMENT imagem EMPTY >
+<!ATTLIST imagem 
+        src CDATA #REQUIRED >
+
+<!ELEMENT ul (li)+ >
+<!ELEMENT li (#PCDATA | b)* >
+
+<!ELEMENT resultados (resultado)+ >
+<!ELEMENT resultado  (#PCDATA)>
+<!ATTLIST resultado 
+            url CDATA #REQUIRED>
+
+

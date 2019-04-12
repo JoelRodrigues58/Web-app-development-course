@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Os documentos desta plataforma estão essencialmente divididos em 4 grandes blocos, o bloco da meta informação, o bloco da descrição da classe
+, contexto da avaliação e por fim decisões da avaliação-->
+<!ELEMENT documento (meta,desc_classe,cont_aval,dec_aval) >
+
+<!--Meta informação -->
+<!ELEMENT meta (codigo,titulo,estado,pai) >
+<!ELEMENT pai (titulo) >
+<!ATTLIST pai
+        id IDREF #REQUIRED> 
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT estado (#PCDATA)>
+<!ELEMENT codigo (#PCDATA) >
+
+<!--Descrição da classe-->
+<!ELEMENT desc_classe (descricao,notas_aplicacao,exemplos?,notas_exclusao,termos_indice)>
+<!ELEMENT descricao (#PCDATA) >
+<!ELEMENT notas_aplcicacao (item)+ >
+<!ELEMENT item (#PCDATA|ref)* >
+<!ELEMENT exemplos (item)+ >
+<!ELEMENT notas_exculsao (item)+ >
+<!ELEMENT termos_indice (item)+ >
+<!ELEMENT ref (#PCDATA)>
+<!ATTLIST ref
+            url CDATA #REQUIRED>
+        
+ <!--Contexto da Avaliação -->       
+<!ELEMENT cont_aval (donos,tipo_intervencao,processos_relacionados,legislacao)>
+<!ATTLIST cont_aval
+          tipo CDATA #REQUIRED>
+<!ATTLIST cont_aval
+          transversal CDATA #REQUIRED> 
+<!ELEMENT donos (dono)+ >
+<!ELEMENT dono (#PCDATA) >
+<!ATTLIST dono
+        url CDATA #REQUIRED>
+<!ELEMENT tipo_intervencao (intervencao)+ >
+<!ELEMENT intervencao (#PCDATA) >
+<!ATTLIST intervencao
+        tipo CDATA #REQUIRED>        
+<!ELEMENT processos_relacionados (relacao)+ >
+<!ELEMENT relacao (item)+ >
+<!ATTLIST relacao
+        tipo CDATA #REQUIRED>       
+<!ELEMENT legislacao (item)+ >
+        
+        
+ <!--Decisões da Avaliação -->              
+<!ELEMENT dec_aval (prazo,destino_final) >
+<!ELEMENT prazo (forma,justificacao) >
+<!ATTLIST prazo 
+        limite CDATA #REQUIRED>
+<!ELEMENT forma (#PCDATA)>
+<!ELEMENT jusiticacao (criterio)+ >
+<!ELEMENT criterio (item) >
+<!ATTLIST criterio 
+        tipo CDATA #REQUIRED>    
+<!ELEMENT destino_final (justificacao)+ >
+<!ATTLIST destino_final 
+        
+        
+        
+        
